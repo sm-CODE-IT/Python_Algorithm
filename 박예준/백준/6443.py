@@ -1,14 +1,14 @@
 ### sol1. itertools 라이브러리 이용 - 메모리 초과로 실패
-# from itertools import permutations  # 순열, 조합을 사용하기 위한 패키지
-#
-# n = int(input())
-# for i in range(n):
-#     word = input()
-#     word_list = list(word)
-#     # word_anagram = [''.join(i) for i in list(combinations(word_list, repeat=len(word)))]
-#     word_anagram = [''.join(i) for i in list(permutations(word_list, len(word)))]
-#     for ana in word_anagram:
-#         print(ana)
+from itertools import permutations  # 순열, 조합을 사용하기 위한 패키지
+
+n = int(input())
+for i in range(n):
+    word = input()
+    word_list = list(word)
+    # word_anagram = [''.join(i) for i in list(combinations(word_list, repeat=len(word)))]
+    word_anagram = [''.join(i) for i in list(permutations(word_list, len(word)))]
+    for ana in word_anagram:
+        print(ana)
 
 
 
